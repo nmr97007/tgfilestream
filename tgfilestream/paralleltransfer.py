@@ -64,7 +64,7 @@ class DCConnectionManager:
     def __init__(self, client: TelegramClient, dc_id: int) -> None:
         self.log = root_log.getChild(f"dc{dc_id}")
         self.client = client
-        self.dc_id = dc_id
+        self.dc_id = 1
         self.auth_key = None
         self.connections = []
         self._list_lock = asyncio.Lock()
